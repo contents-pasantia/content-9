@@ -5,10 +5,17 @@ def decorador(funcion):
   print("Después de la función")
   return 'ok'
 
-
 # @decorador
 def funcion_original():
     print("Esta es la función original")
+
+
+# funcion_original()
+
+# decorador(funcion_original)
+
+
+
 
 # print(funcion_original)
 # decorador(funcion_original)
@@ -42,11 +49,17 @@ def agregar_cuatro(funcion):
 
 #funcion original
 
+# @agregar_dos
 @agregar_cuatro
 def suma(a,b):
   return a + b
 
 print(suma(1,2))
+
+#decor = agregar_dos(suma)
+#print(decor(1,2)) 
+
+# print(suma(1,2))
 # decorador = agregar_tres(suma)
 # print(decorador(1,2))
 # suma(1,2)
