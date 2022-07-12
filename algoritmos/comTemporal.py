@@ -4,7 +4,6 @@ sys.setrecursionlimit(3000)
 
 def factorial(n):
     respuesta = 1
-
     while n > 1:
         respuesta *= n
         n -= 1
@@ -19,12 +18,12 @@ def factorial_r(n):
 
 
 if __name__ == '__main__':
-    n = 2000
+    n = 1500
 
-    comienzo = time.time()
+    comienzo2 = time.time()
     factorial(n)
-    final = time.time()
-    print(final - comienzo)
+    final2 = time.time()
+    print(final2 - comienzo2)
 
     comienzo = time.time()
     factorial_r(n)
